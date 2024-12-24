@@ -52,7 +52,7 @@ pyi_pylib_load(struct PYI_CONTEXT *pyi_ctx)
      * the 'ar' archives can be used for both static and shared objects.
      * A shared library can be loaded from such an archive like this:
      *   dlopen("libpythonX.Y.a(libpythonX.Y.so)", RTLD_MEMBER)
-     * This means that if python library name ends with ˙.a˙ suffix, we
+     * This means that if python library name ends with '.a' suffix, we
      * need to change it into:
      *   libpython3.6.a(libpython3.6.so)
      * Shared libraries whose names end with .so may be used as-is. */
